@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  background-color: #d7b399;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 16px;
+}
+
+.page--cream {
+  background-color: #f9f6f1;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 127px;
+}
+
+.navbar--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navbar--list--item {
+  margin-right: 52px;
+}
+
+.navbar--list--link {
+  color: #212121;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar--cart {
+  background-image: url("./img/shopping basket.svg");
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding-left: 45px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.navbar--cart--count {
+  background-image: url("./img/Group 6.svg");
+  font-size: 12px;
+  color: #ffffff;
+  width: 45px;
+  height: 17px;
+  background-repeat: no-repeat;
+  margin-top: 8px;
+  background-position: 0 center;
+  font-weight: 700;
+  display: block;
+}
+
+.sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sale--item, .sale--text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  /* Три значения: flex-grow | flex-shrink | flex-basis */
+}
+
+.sale--text--description {
+  color: black;
+  font-size: 30px;
+  letter-spacing: -0.7px;
+}
+
+.sale--text--title {
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sale--item {
+  position: relative;
+}
+
+.sale--item--price {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+.sale--item--price-previous {
+  text-decoration: line-through;
+  font-size: 24px;
+  font-weight: 700px;
+}
+
+.sale--item--price-new {
+  font-size: 47px;
+  font-weight: 700;
+  color: #d84033;
+}
+/*# sourceMappingURL=style.css.map */

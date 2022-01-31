@@ -1,0 +1,120 @@
+$accent: #d7b399;
+$cream: #f9f6f1;
+$dark: #212121;
+$important: #d84033;
+$white: #ffffff;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  background-color: $accent;
+  color: $white;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 16px;
+}
+
+.page--cream {
+  background-color: $cream;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 127px;
+}
+
+.navbar--list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+
+  &--item {
+    margin-right: 52px;
+  }
+
+  &--link {
+    color: $dark;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+
+.navbar--cart {
+  background-image: url("./img/shopping basket.svg");
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding-left: 45px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  &--count {
+    background-image: url("./img/Group 6.svg");
+    font-size: 12px;
+    color: $white;
+    width: 45px;
+    height: 17px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+    background-position: 0 center;
+    font-weight: 700;
+    display: block;
+  }
+}
+
+.sale {
+  display: flex;
+  justify-content: space-between;
+
+  &--item,
+  &--text {
+    flex: 0 0 50%; /* Три значения: flex-grow | flex-shrink | flex-basis */
+  }
+
+  &--text {
+    &--description {
+      color: black;
+      font-size: 30px;
+      letter-spacing: -0.7px;
+    }
+
+    &--title {
+      font-size: 55px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &--item {
+    position: relative;
+
+    &--price {
+      position: absolute;
+      right: 0;
+      text-align: right;
+
+      &-previous {
+        text-decoration: line-through;
+        font-size: 24px;
+        font-weight: 700px;
+      }
+
+      &-new {
+        font-size: 47px;
+        font-weight: 700;
+        color: $important;
+      }
+    }
+  }
+}
