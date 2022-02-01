@@ -9,11 +9,16 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 18px 29px;
 }
 
 .page--cream {
   background-color: #f9f6f1;
+}
+
+.page--dark {
+  background-color: #212121;
+  color: #ffffff;
 }
 
 .wrapper {
@@ -34,6 +39,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 127px;
+  padding-top: 46px;
 }
 
 .navbar--list {
@@ -96,13 +102,15 @@ body {
 .sale--text--description {
   color: black;
   font-size: 30px;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.5px;
 }
 
 .sale--text--title {
   font-size: 55px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 55px;
+  margin-top: 30px;
 }
 
 .sale--item {
@@ -112,6 +120,7 @@ body {
 .sale--item--price {
   position: absolute;
   right: 0;
+  top: 30px;
   text-align: right;
 }
 
@@ -125,5 +134,55 @@ body {
   font-size: 47px;
   font-weight: 700;
   color: #d84033;
+  margin-top: 17px;
+}
+
+.notice {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 69px;
+}
+
+.notice-heading {
+  text-transform: uppercase;
+  font-style: 30px !important;
+  font-weight: 700;
+}
+
+.notice-price {
+  font-weight: 400;
+}
+
+.notice-text {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.clothing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clothing--female {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.clothing--male {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.clothing--male--image {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

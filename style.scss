@@ -14,11 +14,18 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 18px 29px;
 }
 
-.page--cream {
-  background-color: $cream;
+.page {
+  &--cream {
+    background-color: $cream;
+  }
+
+  &--dark {
+    background-color: $dark;
+    color: $white;
+  }
 }
 
 .wrapper {
@@ -33,6 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 127px;
+  padding-top: 46px;
 }
 
 .navbar--list {
@@ -86,13 +94,15 @@ body {
     &--description {
       color: black;
       font-size: 30px;
-      letter-spacing: -0.7px;
+      letter-spacing: -0.5px;
     }
 
     &--title {
       font-size: 55px;
       font-weight: 700;
       text-transform: uppercase;
+      margin-bottom: 55px;
+      margin-top: 30px;
     }
   }
 
@@ -102,6 +112,7 @@ body {
     &--price {
       position: absolute;
       right: 0;
+      top: 30px;
       text-align: right;
 
       &-previous {
@@ -114,7 +125,44 @@ body {
         font-size: 47px;
         font-weight: 700;
         color: $important;
+        margin-top: 17px;
       }
+    }
+  }
+}
+
+.notice {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 69px;
+  &-heading {
+    text-transform: uppercase;
+    font-style: 30px !important;
+    font-weight: 700;
+  }
+  &-price {
+    font-weight: 400;
+  }
+  &-text {
+    font-size: 21px;
+    font-weight: 300;
+  }
+}
+
+.clothing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &--female {
+    flex: 0 0 50%;
+  }
+
+  &--male {
+    flex: 0 0 50%;
+
+    &--image {
+      position: absolute;
     }
   }
 }
